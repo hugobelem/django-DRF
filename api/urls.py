@@ -7,4 +7,5 @@ urlpatterns = [
     path('books/<int:pk>/',
          views.BooksRetieveUpdateDestroy.as_view(),
          name='update'),
+    path('books/filter/', views.BooksAuthor.as_view(), name='filter')
 ]
